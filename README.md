@@ -127,5 +127,5 @@ git push git push origin master:{**unique-named** branch}
   </repository>
 </repositories>
 ```
-**IMPORTANT** if merged into master, **url** should without {branch-name}
+**IMPORTANT** if merged into master, **url** should use master as {branch-name}
 2. normal *dependency* setting
