@@ -55,7 +55,7 @@ tp://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
 </plugins>
 ```
 3. setup plugin to upload targets to github
-**IMPORTANT** use project name as *branch* name, keep multi-projects separated in one github repository (e.g **hqit-maven-repo**)
+**IMPORTANT** ~~use project name as *branch* name~~, set **merge** to *true*, keep multi-projects separated in one github repository (e.g **hqit-maven-repo**)
 ```
 <plugin>
   <groupId>com.github.github</groupId>
@@ -65,8 +65,9 @@ tp://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <message>Maven artifacts for ${project.version}</message> <!-- git commit message -->
     <noJekyll>true</noJekyll> <!-- disable webpage processing -->
     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
-    <branch>refs/heads/${project.name}</branch> <!-- remote branch name -->
-    <includes>
+    <branch>refs/heads/master</branch> <!-- remote branch name -->
+    <merge>true</merge>
+    <includes>
       <include>**/*</include>
     </includes>
   </configuration>
@@ -126,4 +127,5 @@ git push git push origin master:{**unique-named** branch}
   </repository>
 </repositories>
 ```
+**IMPORTANT** if merged into master, **url** should without {branch-name}
 2. normal *dependency* setting
