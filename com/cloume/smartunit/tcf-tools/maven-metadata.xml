@@ -3,8 +3,8 @@
   <groupId>com.cloume.smartunit</groupId>
   <artifactId>tcf-tools</artifactId>
   <versioning>
-    <latest>0.1.6-RELEASE</latest>
-    <release>0.1.6-RELEASE</release>
+    <latest>0.1.7-RELEASE</latest>
+    <release>0.1.7-RELEASE</release>
     <versions>
       <version>0.0.1-RELEASE</version>
       <version>0.0.1-YML-RELEASE</version>
@@ -15,6 +15,7 @@
       <version>0.0.4-RELEASE</version>
       <version>0.0.4-YML-RELEASE</version>
       <version>0.0.5-RELEASE</version>
+      <version>0.0.5-YML-RELEASE</version>
       <version>0.0.6-RELEASE</version>
       <version>0.0.6.1-RELEASE</version>
       <version>0.0.6.2-RELEASE</version>
@@ -25,7 +26,8 @@
       <version>0.1.4-RELEASE</version>
       <version>0.1.5-RELEASE</version>
       <version>0.1.6-RELEASE</version>
+      <version>0.1.7-RELEASE</version>
     </versions>
-    <lastUpdated>20170823085439</lastUpdated>
+    <lastUpdated>20170829014535</lastUpdated>
   </versioning>
 </metadata>
