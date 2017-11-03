@@ -3,11 +3,10 @@
   <groupId>com.cloume.smartunit</groupId>
   <artifactId>tcf-tools</artifactId>
   <versioning>
-    <release>0.1.7-RELEASE</release>
+    <release>0.1.8-RELEASE</release>
     <versions>
-      <version>0.1.8-SNAPSHOT</version>
-      <version>0.1.7-RELEASE</version>
+      <version>0.1.8-RELEASE</version>
     </versions>
-    <lastUpdated>20171012094040</lastUpdated>
+    <lastUpdated>20171103071713</lastUpdated>
   </versioning>
 </metadata>
