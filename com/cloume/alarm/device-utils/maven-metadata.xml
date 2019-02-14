@@ -3,9 +3,10 @@
   <groupId>com.cloume.alarm</groupId>
   <artifactId>device-utils</artifactId>
   <versioning>
+    <release>1.1.1-RELEASE</release>
     <versions>
-      <version>1.1-SNAPSHOT</version>
+      <version>1.1.1-RELEASE</version>
     </versions>
-    <lastUpdated>20190214073029</lastUpdated>
+    <lastUpdated>20190214075039</lastUpdated>
   </versioning>
 </metadata>
