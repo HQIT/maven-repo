@@ -1,5 +1,37 @@
 # HQIT Maven Repository
 
+## 只是使用的看这个section就够了
+1. add *repository* in pom.xml of project (在pom.xml中增加仓库配置)
+```
+<repositories>
+  <repository>
+    <id>cloume</id> <!-- 不要和其他仓库名冲突，和第3.步中的排除名称必须一致 -->
+    <url>https://raw.github.com/HQIT/maven-repo/master</url>
+    <snapshots>
+      <enabled>true</enabled>
+      <updatePolicy>always</updatePolicy>
+    </snapshots>
+  </repository>
+</repositories>
+```
+**IMPORTANT** if merged into master, **url** should use master as {branch-name} 
+
+2. normal *dependency* setting
+
+3. 如果设置了aliyun等镜像仓库, 需要过滤cloume仓库设置, 在settings.xml中做如下设置:
+```
+<mirrors>
+       <mirror>
+            <id>nexus-aliyun</id>
+            <mirrorOf>*,!jeecg,!jeecg-snapshots,!cloume</mirrorOf>
+            <name>Nexus aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </mirror> 
+ </mirrors>
+```
+- ``mirrorOf``中使用``!cloume``排除cloume仓库
+
+## 下面是需要deploy的才看，一般不需要
 ## setup ``~/.m2/settings.xml``, add server info
 if *Two-factor Auth* enabled, use access token instead of password.
 ```
